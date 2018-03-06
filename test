@@ -1,1 +1,14 @@
 
+/* In solidity contract is like a class which contains the state variable and the functions simillarly to the classes in java. 
+In this we are creating a simple solidity code that changes the state variable value according the set function. */
+
+pragma solidity ^0.4.0;
+contract SimpleStorage {
+    uint storedData;
+    function set(uint x) public {
+        storedData =x;
+    }
+    function get() public constant returns (uint) {
+        return storedData;
+    }
+}
